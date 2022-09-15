@@ -12,3 +12,4 @@ Looge funktsioon checkTemp mis võtab sisendiks temperatuuri ja tagastab vahemik
 Liiga külm tagastab -1
 Paras temperatuur tagastab 0
 Liiga kuum tagastab 1
+TEST123
