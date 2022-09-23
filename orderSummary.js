@@ -33,9 +33,9 @@ const tellimus = {
     ]
 }
 
-function orderSummary(order) {
+function orderSummary() {
     let fullPrice = 0
-    for (const row of order.rows) {
+    for (const row of tellimus.rows) {
         const vatPrice = (1 + row.vat) * row.price
         fullPrice += vatPrice * row.amount
         console.log(row.name, row.amount, vatPrice.toFixed(2))
