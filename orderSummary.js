@@ -42,5 +42,3 @@ function orderSummary() {
     }
     console.log(fullPrice.toFixed(2))
 }
-
-orderSummary(tellimus)
