@@ -38,9 +38,9 @@ function orderSummary(order) {
     for (const row of order.rows) {
         const vatPrice = (1 + row.vat) * row.price
         fullPrice += vatPrice * row.amount
-        console.log(`Nimi: ${row.name}; Kogus: ${row.amount}; Hind: ${vatPrice.toFixed(2)}€;`)
+        console.log(row.name, row.amount, vatPrice.toFixed(2))
     }
-    console.log(`Kogusumma: ${fullPrice.toFixed(2)}€`)
+    console.log(fullPrice.toFixed(2))
 }
 
 orderSummary(tellimus)
